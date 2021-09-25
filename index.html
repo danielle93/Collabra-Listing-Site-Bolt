@@ -222,6 +222,12 @@
 <script src="js/scripts.js"></script>
 <script type="text/javascript" src="js/map-script.js"></script>
 <script src="js/skrollr.min.js"></script>
+<script>
+    var s = skrollr.init();
+    if (s.isMobile()) {
+        s.destroy();
+    }
+</script>
 <footer>
     <div class="container">
         <div class="row">

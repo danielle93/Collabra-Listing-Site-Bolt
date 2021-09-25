@@ -3,7 +3,11 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
-
+ //   Skrollr
+//  var s = skrollr.init();
+//  if (s.isMobile()) {
+//  s.destroy();
+//  }
 
 $(document).on('ready', function() {
     // Slick Slider
@@ -18,12 +22,6 @@ $(document).on('ready', function() {
       swipe: true,
       swipeToSlide: true,
     });
-
-    //   Skrollr
-    var s = skrollr.init();
-    if (s.isMobile()) {
-    s.destroy();
-}
   });
 
 
