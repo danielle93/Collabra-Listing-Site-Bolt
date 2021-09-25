@@ -17,17 +17,6 @@ $(document).on('ready', function() {
       swipe: true,
       swipeToSlide: true,
     });
-
-    skrollr.init({
-        forceHeight: false
-    });
-
-	// Skrollr does not work on mobile
-if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-	skrollr.init({
-		forceHeight: false
-	});
-}
   });
 
 //   Skrollr
