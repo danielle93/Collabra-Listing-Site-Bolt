@@ -4,8 +4,9 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
 
-// Slick Slider
+
 $(document).on('ready', function() {
+    // Slick Slider
     $(".lazy").slick({
       lazyLoad: 'ondemand', // ondemand progressive anticipated
       infinite: true,
@@ -17,9 +18,14 @@ $(document).on('ready', function() {
       swipe: true,
       swipeToSlide: true,
     });
+
+    //   Skrollr
+    var s = skrollr.init();
+    if (s.isMobile()) {
+    s.destroy();
+}
   });
 
-//   Skrollr
 
 
 
