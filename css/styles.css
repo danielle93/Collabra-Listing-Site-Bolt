@@ -22,6 +22,10 @@ h2 {
   letter-spacing: 2px;
 }
 
+input {
+  border-radius: 0px !important;
+}
+
 /* ================ NAVIGATION ================ */
 .scrolled {
   background-color: #fff !important;
