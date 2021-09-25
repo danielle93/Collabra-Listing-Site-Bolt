@@ -741,6 +741,7 @@ form {
 input[type=text], textarea {
   outline: 2px solid #fff;
   transition: ease outline 500ms;
+  border-radius: 0;
 }
 
 input[type=text]:focus, textarea:focus {
