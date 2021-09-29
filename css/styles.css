@@ -14,6 +14,7 @@
 body, html {
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
+  transform: translate3d(0);
 }
 
 h2 {
@@ -407,6 +408,7 @@ nav.navbar .nav-item a:hover {
 .featured-image-3 {
   background-image: url("../assets/gallery/5.jpg");
   background-size: cover;
+  bottom: -30%;
 }
 
 .featured-image-4 {
@@ -448,31 +450,11 @@ nav.navbar .nav-item a:hover {
   padding-top: 100%;
 }
 
-.item.size-1:first-of-type .image-wrapper {
-  transform: translateY(300px);
-}
-
-.item.size-1:last-of-type .image-wrapper {
-  transform: translateX(300px);
-}
-
 .item.size-2 .image-wrapper:before {
   display: block;
   content: " ";
   width: 100%;
   padding-top: 50%;
-}
-
-.item.size-2:first-of-type .image-wrapper {
-  transform: translateY(-300px);
-}
-
-.item.size-2:last-of-type .image-wrapper {
-  transform: translateX(300px);
-}
-
-.tall-item .image-wrapper {
-  transform: translateX(-300px);
 }
 
 .image-wrapper {
@@ -481,22 +463,6 @@ nav.navbar .nav-item a:hover {
   height: 100%;
   position: relative;
   border: 15px solid white;
-  opacity: 0;
-  -webkit-animation: fadeSlideIn 0.5s 0.5s forwards;
-          animation: fadeSlideIn 0.5s 0.5s forwards;
-}
-
-.grad-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.grad-image {
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .text-overlay {
@@ -520,18 +486,6 @@ nav.navbar .nav-item a:hover {
 @media screen and (min-width: 900px) and (max-width: 1100px) {
   .text-overlay {
     font-size: 14px;
-  }
-}
-@-webkit-keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
   }
 }
 /* ============= Amenities ============= */

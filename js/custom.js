@@ -1,6 +1,3 @@
-"use strict";
-
-
 $(function () {
 	$(document).scroll(function () {
 	  var $nav = $("#toggle_menu_wrapper");
@@ -9,6 +6,7 @@ $(function () {
 	  var $agent = $(".headerAgentInfo");
 	  $agent.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
+
   });
 
   //Masonry Gallery
@@ -31,14 +29,14 @@ $(function () {
 		$(".arrowl").css("display", "block");
 	  }
 	});
-  
+
 	$(".close").click(function() {
 	  $(".lightbox").fadeOut(300);
 	  $("h1").remove();
 	  $(".lightbox img").remove();
 	  $("html").css("overflow", "auto");
 	});
-  
+
 	$(document).keyup(function(e) {
 	  if (e.keyCode == 27) {
 		$(".lightbox").fadeOut(300);
@@ -46,7 +44,7 @@ $(function () {
 		$("html").css("overflow", "auto");
 	  }
 	});
-  
+
 	$(".arrowr").click(function() {
 	  var imgSrc = $(".lightbox img").attr("src");
 	  var search = $("section").find("img[src$='" + imgSrc + "']");
@@ -54,14 +52,14 @@ $(function () {
 	  /*$(".lightbox img").attr("src", search.next());*/
 	  $(".lightbox img").attr("src", newImage);
 	  $(".filter").css("background-image", "url(" + newImage + ")");
-  
+
 	  if (!search.next().is(":last-child")) {
 		$(".arrowl").css("display", "block");
 	  } else {
 		$(".arrowr").css("display", "none");
 	  }
 	});
-  
+
 	$(".arrowl").click(function() {
 	  var imgSrc = $(".lightbox img").attr("src");
 	  var search = $("section").find("img[src$='" + imgSrc + "']");
@@ -69,14 +67,14 @@ $(function () {
 	  /*$(".lightbox img").attr("src", search.next());*/
 	  $(".lightbox img").attr("src", newImage);
 	  $(".filter").css("background-image", "url(" + newImage + ")");
-  
+
 	  if (!search.prev().is(":first-child")) {
 		$(".arrowr").css("display", "block");
 	  } else {
 		$(".arrowl").css("display", "none");
 	  }
 	});
-  
+
   });
 
 
@@ -151,7 +149,7 @@ function mainBanner () {
 
 
 
-// Main-banner slider 
+// Main-banner slider
 function mainRevBanner () {
 		  if ($("#banner_rev_slider").length) {
 		    $("#banner_rev_slider").revolution({
@@ -193,7 +191,7 @@ function mainRevBanner () {
 							space: 10,
 							tmp: '<span class="tp-bullet-inner"></span>'
 						}
-  
+
 				},
 				responsiveLevels:[2220,1183,975,751],
 						  gridwidth:[1170,970,770,580],
@@ -211,7 +209,7 @@ function mainRevBanner () {
 							simplifyAll:"off",
 							disableFocusListener:false,
 						  }
-		  }); 
+		  });
 	  };
 }
 
@@ -228,13 +226,13 @@ function toggleMenuDesktop () {
 			$('.toggle_dropdown').removeClass("open_toggle");
 			$('.toggle_dropdown .main_menu').fadeOut(100);
 		});
-	} 
+	}
 }
 
 
 
 
-// Select menu 
+// Select menu
 function selectDropdown () {
 	if($(".selectmenu").length) {
 		$( ".selectmenu" ).selectmenu();
@@ -318,7 +316,7 @@ function scrollToTop () {
         $('.scroll-top').fadeOut();
       }
     });
-    
+
     //Click event to scroll to top
     $('.scroll-top').on('click', function(){
       $('html, body').animate({scrollTop : 0},1500);
