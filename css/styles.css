@@ -502,10 +502,16 @@ nav.navbar .nav-item a:hover {
 }
 
 /* ===========f== MASONRY GALLERY ============= */
-#Gallery button.btn {
-  max-width: 200px;
+#Gallery .btn-secondary {
+  color: #000;
+  background: none !important;
   display: block;
   margin: 0 auto;
+  border: 2px solid black;
+  max-width: 200px;
+}
+#Gallery .btn-secondary:hover {
+  border: 2px solid rgba(0, 0, 0, 0.4);
 }
 
 section.gallery {
