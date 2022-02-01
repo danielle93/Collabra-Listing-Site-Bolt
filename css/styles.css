@@ -502,6 +502,12 @@ nav.navbar .nav-item a:hover {
 }
 
 /* ===========f== MASONRY GALLERY ============= */
+#Gallery button.btn {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 section.gallery {
   -moz-column-width: 300px;
        column-width: 300px;
